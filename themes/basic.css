@@ -1,0 +1,41 @@
+.bv-box{
+  width: 22px;
+  height: 22px;
+}
+
+.bv-select-select{
+  display: inline-block;
+}
+.bv-select-select *{
+  padding: 0;
+  margin: 0;
+}
+.bv-select-header{
+  background: #ffffff;
+  cursor: pointer;
+  border: 1px solid #cccccc;
+  padding-left: 10px;
+  font-size: 12px;
+  height: 30px;
+  line-height: 30px;
+}
+.bv-select-header .disabled{
+  background-color: #EBEBE4
+}
+ul.bv-select-list{
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-top: none;
+  list-style: none;
+}
+ul.bv-select-list li{
+  cursor: pointer;
+  height: 36px;
+  font-size: 12px;
+  line-height: 36px;
+  padding-left: 10px;
+}
+ul.bv-select-list li:hover{
+  background-color: #e4f3fa;
+  color: #2395C5;
+}

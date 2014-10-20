@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>bv-select</title>
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bv-select.js"></script>
+  <link rel="stylesheet" href="themes/basic.css">
+</head>
+<body>
+  <select name="select1" id="any-select">
+    <option value="0">Please Select...</option>
+    <option value="1">First Option</option>
+    <option value="2">Second Option</option>
+  </select>
+  <select name="select1" id="another-select">
+    <option value="0">Please Choose...</option>
+    <option value="1">First Option</option>
+    <option value="2">Second Option</option>
+  </select>
+  <script>
+    $(function() {
+      $('#any-select').selectify();
+      $('#another-select').selectify();
+    });
+  </script>
+</body>
+</html>
