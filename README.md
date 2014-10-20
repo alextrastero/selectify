@@ -1,8 +1,6 @@
-selectify - jquery plugin to customize selects
-==============================================
+# selectify - jquery plugin to customize selects
+## Usage
 
-Usage
--------------------------------------------
 HTML:
   <select name='lang' id='language-selector'>
     <option value=0>Language</option>
@@ -10,4 +8,6 @@ HTML:
     <option value='es'>Spanish</option>
   </select>
 JS:
-  $('#language-selector').selectify();
+```
+$('#language-selector').selectify();
+```
