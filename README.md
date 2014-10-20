@@ -10,6 +10,6 @@ HTML:
 </select>
 ```
 JS:
-```
+```JAVASCRIPT
 $('#language-selector').selectify();
 ```
