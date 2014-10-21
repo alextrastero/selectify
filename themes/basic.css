@@ -3,14 +3,14 @@
   height: 22px;
 }
 
-.bv-select-select{
+.selectify{
   display: inline-block;
 }
-.bv-select-select *{
+.selectify *{
   padding: 0;
   margin: 0;
 }
-.bv-select-header{
+.selectify-header{
   background: #ffffff;
   cursor: pointer;
   border: 1px solid #cccccc;
@@ -19,23 +19,24 @@
   height: 30px;
   line-height: 30px;
 }
-.bv-select-header .disabled{
-  background-color: #EBEBE4
+.selectify-header.disabled{
+  background-color: #EEEEEE;
+  cursor: default;
 }
-ul.bv-select-list{
+ul.selectify-list{
   background-color: #ffffff;
   border: 1px solid #cccccc;
   border-top: none;
   list-style: none;
 }
-ul.bv-select-list li{
+ul.selectify-list li{
   cursor: pointer;
   height: 36px;
   font-size: 12px;
   line-height: 36px;
   padding-left: 10px;
 }
-ul.bv-select-list li:hover{
+ul.selectify-list li:hover, ul.selectify-list li.active{
   background-color: #e4f3fa;
   color: #2395C5;
 }

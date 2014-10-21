@@ -2,27 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>bv-select</title>
+  <title>selectify</title>
   <script src="js/jquery-1.11.1.min.js"></script>
-  <script src="js/bv-select.js"></script>
+  <script src="js/selectify.js"></script>
   <link rel="stylesheet" href="themes/basic.css">
 </head>
 <body>
+  <label for="select1">Choose Life: </label>
   <select name="select1" id="any-select">
     <option value="0">Please Select...</option>
     <option value="1">First Option</option>
     <option value="2">Second Option</option>
   </select>
-  <select name="select1" id="another-select">
-    <option value="0">Please Choose...</option>
-    <option value="1">First Option</option>
-    <option value="2">Second Option</option>
-  </select>
+
+  <form action="POST" id="any-form" name="new-account">
+    <p>
+      <label for="name">Name: </label>
+      <input type="text" name="name">
+    </p>
+    <p>
+      <label for="lang">Language: </label>
+      <select name='lang' id='select1' disabled="disabled">
+        <option value='en'>English</option>
+        <option value='es'>Spanish</option>
+        <option value='fr'>French</option>
+        <option value='de'>German</option>
+      </select>
+    </p>
+    <p>
+      <label for="sex">Sex: </label>
+      <select name='sex' id='select2'>
+        <option value='1'>Male</option>
+        <option value='2'>Female</option>
+        <option value='3'>Other</option>
+      </select>
+    </p>
+  </form>
+
   <script>
-    $(function() {
-      $('#any-select').selectify();
-      $('#another-select').selectify();
-    });
+    $('#any-select').selectify();
+    $('#any-form').selectify({form: true});
   </script>
 </body>
 </html>
